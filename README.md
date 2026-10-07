@@ -9,7 +9,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Reproducible](https://img.shields.io/badge/reproducible-seed%200-lightgrey)](run_benchmark.py)
 
-[🚀 Quick Start](#-quick-start--copy-paste-these-4-lines) · [🌱 Beginner Guide](#-beginner-guide--read-this-and-you-are-a-professional) · [🎓 Interactive Quiz](preview.html) · [🌐 Live Website](#-website--github-pages) · [📊 Results](#results-video-claim--this-repo-seed-0-resultsbenchmarkjson) · [❓ FAQ](#-faq)
+[🚀 Quick Start](#-quick-start--copy-paste-these-4-lines) · [🌱 Beginner Guide](#-beginner-guide--read-this-and-you-are-a-professional) · [🎓 Interactive Quiz](https://m0-ar.github.io/8-ideas-that-built-ai/preview.html#quiz) · [🌐 Live Website](https://m0-ar.github.io/8-ideas-that-built-ai/) · [📊 Results](#results-video-claim--this-repo-seed-0-resultsbenchmarkjson) · [❓ FAQ](#-faq)
 
 </div>
 
@@ -128,7 +128,18 @@ pip install terminalizer && terminalizer render docs/demo.cast
 
 ## 🎓 Interactive quiz (learn by answering)
 
-Open **`preview.html`** (double-click, no server needed) or the [live website](#-website--github-pages) and take the **12-question quiz**: one question per idea plus four applied questions, instant right/wrong feedback, final score with a study prescription. It uses scaffolded retrieval practice — questions go from recall ("what does ReLU output for negative input?") to transfer ("why does a student that never saw a 3 still read 67% of them?").
+**Take it live (renders in the browser):** [m0-ar.github.io/8-ideas-that-built-ai/preview.html#quiz](https://m0-ar.github.io/8-ideas-that-built-ai/preview.html#quiz) — 12 questions with instant feedback. Offline? Double-click `preview.html` in your clone.
+
+| Page | Live URL (after Pages is on) | Local file |
+|---|---|---|
+| Interactive site + quiz | [m0-ar.github.io/8-ideas-that-built-ai/](https://m0-ar.github.io/8-ideas-that-built-ai/) | `preview.html` (or `index.html` redirect) |
+| Same page, alternate path | [m0-ar.github.io/8-ideas-that-built-ai/preview.html](https://m0-ar.github.io/8-ideas-that-built-ai/preview.html) | `docs/preview.html` |
+| Same page, docs path | [m0-ar.github.io/8-ideas-that-built-ai/docs/preview.html](https://m0-ar.github.io/8-ideas-that-built-ai/docs/preview.html) | `docs/preview.html` |
+
+> [!NOTE]
+> Mirrors exist on purpose: with Pages source `/docs`, the first two URLs render; with source `/` (root), all three render. If any URL 404s while others 200, your publishing source doesn't match the path — see [Website / GitHub Pages](#-website--github-pages).
+
+Open **`preview.html`** (double-click, no server needed) or any live link above and take the **12-question quiz**: one question per idea plus four applied questions, instant right/wrong feedback, final score with a study prescription. It uses scaffolded retrieval practice — questions go from recall ("what does ReLU output for negative input?") to transfer ("why does a student that never saw a 3 still read 67% of them?").
 
 ## 🌐 Website / GitHub Pages
 
