@@ -1,0 +1,24 @@
+services:
+  hinton-verify:
+    build: .
+    container_name: hinton-8-ideas-verify
+    volumes:
+      - ./results:/app/results
+      - ./data:/app/data:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - HINTON_SEED=0
+    command: python3 run_benchmark.py --fast
+    mem_limit: 4g
+
+  # Full (slower, paper-grade) run: docker compose run full
+  full:
+    build: .
+    volumes:
+      - ./results:/app/results
+      - ./data:/app/data:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - HINTON_SEED=0
+    command: python3 run_benchmark.py --full
+    profiles: ["full"]
